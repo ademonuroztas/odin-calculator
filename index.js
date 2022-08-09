@@ -63,13 +63,11 @@ buttons.forEach((button) => {
         operator = button.textContent;
         firstValue = display.textContent;
         display.textContent = "";
-        logValues();
       } else if (secondValue === "") {
         secondValue = display.textContent;
         if (operator !== "=") {
           firstValue = operate(firstValue, secondValue, operator);
         }
-        logValues();
         flag = false;
         secondValue = "";
         display.textContent = firstValue;
@@ -83,11 +81,9 @@ buttons.forEach((button) => {
     } else {
       if (flag) {
         display.textContent += button.textContent;
-        logValues();
       } else {
         display.textContent = "";
         display.textContent += button.textContent;
-        logValues();
         flag = true;
       }
     }

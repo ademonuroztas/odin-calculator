@@ -93,12 +93,3 @@ buttons.forEach((button) => {
     }
   });
 });
-
-function logValues() {
-  console.log(`----------------------`);
-  console.log(`operator: ${operator}`);
-  console.log(`display.textContent: ${display.textContent}`);
-  console.log(`firstValue: ${firstValue}`);
-  console.log(`secondValue: ${secondValue}`);
-  console.log(`----------------------`);
-}
